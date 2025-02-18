@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-school = {'a1': '30', 'b1': '32', 'c1': '29', 'd1': '31'}
-print("До изменений:", school)
+if __name__ == "__main__":
+    a = set("aeiouyAEIOUY")
+    count_1 = 0
 
-school['a1'] = 29
-school.setdefault("e1", '14')
-school.pop('d1')
+    b = str(input())
+    for b in a:
+        if b in a:
+            count_1 += 1
 
-print("После изменений:", school)
+    print("Vowels :", count_1)

@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-riddle = {
-    '1': 'Лепестки ворожат —',
-    '2': 'Мельтешит и мерцает храм',
-    '3': 'Сквозь ветви сакуры.',
-    }
+if __name__ == "__main__":
+    a = set(input())
+    b = set(input())
+    c = a.intersection(b)
 
-n = riddle.items()
-swapped = dict(map(reversed, n))
-
-print(swapped)
-
-
+    print("Сrossed symbol :", c)
